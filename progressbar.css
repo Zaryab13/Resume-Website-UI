@@ -1,0 +1,28 @@
+@property --pgPercentage {
+  syntax: "<string>";
+  inherits: false;
+  initial-value: 0;
+}
+
+:root {
+  --size: 8rem;
+  --fg: rgb(0, 124, 237);
+  --bg: rgb(68, 68, 68);
+  --pgPercentage: var(--value);
+}
+
+@keyframes progress {
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}

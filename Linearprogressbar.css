@@ -1,0 +1,57 @@
+.bg-lnir {
+  background-image: linear-gradient(to right, rgb(0,124,237), rgb(0,124,237));
+  /* border: 2px solid #777; */
+}
+
+::selection {
+  color: aliceblue;
+  background: #7c9cfe;
+}
+
+/****************** start tools section *********************/
+
+.tools {
+  padding: 40px 0px;
+}
+
+.tools .tools-progres {
+}
+.tools .tools-progres .progres {
+  width: 50%;
+  float: left;
+  position: relative;
+  padding-bottom: 60px;
+}
+.tools .tools-progres .progres:nth-child(odd) {
+  padding-right: 20px;
+}
+.tools .tools-progres .progres:nth-child(odd) p {
+  right: 20px;
+}
+.tools .tools-progres .progres:nth-child(even) {
+  padding-left: 20px;
+}
+.tools .tools-progres .progres p {
+  float: left;
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+.tools .tools-progres .progres .prog {
+  width: 100%;
+  background-color: var(--clr-accent-300);
+  border: 1px solid var(--clr-accent-200);
+  border-radius: 15px;
+  height: 16px;
+  position: relative;
+}
+.tools .tools-progres .progres .prog span {
+   margin: 3px;
+    position: absolute;
+    top: 10%;
+    height: 45%;
+    border-radius: 15px;
+}
